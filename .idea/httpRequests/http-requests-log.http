@@ -1,3 +1,33 @@
+GET http://localhost:8080/data/hi
+
+<> 2022-09-16T105629.404.txt
+
+###
+
+GET http://localhost:8080/data/hello
+
+<> 2022-09-16T105623.404.txt
+
+###
+
+GET http://localhost:8080/data/hello/sms
+
+<> 2022-09-16T105609.404.txt
+
+###
+
+GET http://localhost:8080/data/hello/sms
+
+<> 2022-09-16T105516.404.txt
+
+###
+
+GET http://localhost:8080/hello/sms
+
+<> 2022-09-16T105503.404.txt
+
+###
+
 GET http://localhost:8080/data/hello
 
 <> 2022-09-13T143503.404.txt

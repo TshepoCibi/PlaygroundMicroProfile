@@ -31,7 +31,7 @@ public class GlobalClientHeaders implements ClientHeadersFactory {
     clientOutgoingHeaders.forEach((k, v) -> System.out.println(k + ":" + v));
 
     MultivaluedMap<String, String> resultHeader = new MultivaluedHashMap();
-    resultHeader.putAll(incomingHeaders);
+//    resultHeader.putAll(incomingHeaders);
     resultHeader.putAll(clientOutgoingHeaders);
 
     System.out.println("--- Header of the Rest Client after merging");
@@ -39,4 +39,6 @@ public class GlobalClientHeaders implements ClientHeadersFactory {
 
     return resultHeader;
   }
+
+
 }
