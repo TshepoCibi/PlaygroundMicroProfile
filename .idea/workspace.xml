@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2196cf73-be21-4795-9650-cbf0572702d8" name="Changes" comment="2nd commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/EmailClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/SmsClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/SmsClientHeaders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/service/EmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/service/SmsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/utils/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/GlobalClientHeaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/EmailClientHeaders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/JSONPlaceholderClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/Attachment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/Attachment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/CorrespondenceAddressee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/CorrespondenceAddressee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/CorrespondenceContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/CorrespondenceContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/CorrespondenceMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/CorrespondenceMedia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/CorrespondenceTemplateReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/CorrespondenceTemplateReference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/DynamicField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/DynamicField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/EmailNotificationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/EmailNotificationDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/EventDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/EventDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/microprofile-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/microprofile-config.properties" afterDir="false" />
-    </list>
+    <list default="true" id="2196cf73-be21-4795-9650-cbf0572702d8" name="Changes" comment="3rd commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662700285117</updated>
       <workItem from="1662700286407" duration="22923000" />
-      <workItem from="1663088544430" duration="82036000" />
+      <workItem from="1663088544430" duration="82830000" />
     </task>
     <task id="LOCAL-00001" summary="2nd commit">
       <created>1663326232926</created>
@@ -131,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663326245930</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="3rd commit">
+      <created>1663390576903</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663390576903</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +136,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2nd commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="2nd commit" />
+    <MESSAGE value="3rd commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="3rd commit" />
   </component>
 </project>
