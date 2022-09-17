@@ -5,9 +5,6 @@ import lombok.*;
 import java.util.Set;
 
 
-@NoArgsConstructor(access = AccessLevel.PRIVATE)
-@AllArgsConstructor
-@Builder
 @Getter
 @Setter
 public class EventDetail {

@@ -9,7 +9,7 @@ import javax.ws.rs.core.MultivaluedHashMap;
 import javax.ws.rs.core.MultivaluedMap;
 
 @ApplicationScoped
-public class GlobalClientHeaders implements ClientHeadersFactory {
+public class EmailClientHeaders implements ClientHeadersFactory {
 
   @Inject
   @ConfigProperty(name = "secrets.value")
@@ -23,11 +23,11 @@ public class GlobalClientHeaders implements ClientHeadersFactory {
 
     System.out.println("--- Specified outgoing headers of the Rest Client");
     clientOutgoingHeaders.add("Correlation-Id","abcdabcd-abcd-abcd-abcd-Abcdabcdabcf");
-    clientOutgoingHeaders.add("Business-Id","KEBRB");
+    clientOutgoingHeaders.add("Business-Id","ZMBRB");
     clientOutgoingHeaders.add("Staff-Id","IFE");
-    clientOutgoingHeaders.add("Country-Code","KE");
-    clientOutgoingHeaders.add("ConsumerUniqueReference-Id","334456677888");
-    clientOutgoingHeaders.add("System-Id","IB");
+    clientOutgoingHeaders.add("Country-Code","ZM");
+    clientOutgoingHeaders.add("ConsumerUniqueReference-Id","212345671234");
+    clientOutgoingHeaders.add("System-Id","DWA");
     clientOutgoingHeaders.forEach((k, v) -> System.out.println(k + ":" + v));
 
     MultivaluedMap<String, String> resultHeader = new MultivaluedHashMap();

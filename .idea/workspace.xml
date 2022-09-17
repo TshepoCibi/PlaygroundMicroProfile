@@ -4,79 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2196cf73-be21-4795-9650-cbf0572702d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/Req.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/sms/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/sms/ResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+    <list default="true" id="2196cf73-be21-4795-9650-cbf0572702d8" name="Changes" comment="2nd commit">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/EmailClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/SmsClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/SmsClientHeaders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/service/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/service/SmsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/utils/Connection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/GlobalClientHeaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/GlobalClientHeaders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/JSONPlaceholderClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/JSONPlaceholderClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/CorrespondenceAddressee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/sms/CorrespondenceAddressee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/CorrespondenceContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/sms/CorrespondenceContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/CorrespondenceMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/sms/CorrespondenceMedia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/CorrespondenceTemplateReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/sms/CorrespondenceTemplateReference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/EventDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/sms/EventDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/ProductAndServiceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/sms/ProductAndServiceType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/SmsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/sms/SmsDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/SmsNotificationDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/GlobalClientHeaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/EmailClientHeaders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/JSONPlaceholderClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/Attachment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/Attachment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/CorrespondenceAddressee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/CorrespondenceAddressee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/CorrespondenceContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/CorrespondenceContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/CorrespondenceMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/CorrespondenceMedia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/CorrespondenceTemplateReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/CorrespondenceTemplateReference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/DynamicField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/DynamicField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/EmailNotificationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/EmailNotificationDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/EventDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/email/EventDetail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/microprofile-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/microprofile-config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bootable-jar-build-artifacts/jar-content/wildfly.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/bootable-jar-build-artifacts/jar-content/wildfly.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bootable-jar-build-artifacts/wildfly/standalone/configuration/standalone.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/bootable-jar-build-artifacts/wildfly/standalone/configuration/standalone.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bootable-jar-build-artifacts/wildfly/standalone/data/content/61/4252bb888bbbd86f927f7504684e3946d002ee/content" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bootable-jar-build-artifacts/wildfly/standalone/data/kernel/process-uuid" beforeDir="false" afterPath="$PROJECT_DIR$/target/bootable-jar-build-artifacts/wildfly/standalone/data/kernel/process-uuid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/microprofile-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/microprofile-config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/playground/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/blog/GlobalClientHeaders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/playground/blog/GlobalClientHeaders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/blog/JSONPlaceholderClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/playground/blog/JSONPlaceholderClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/blog/PostService$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/blog/PostService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/notification/CorrespondenceAddressee$CorrespondenceAddresseeBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/notification/CorrespondenceAddressee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/notification/CorrespondenceContent$CorrespondenceContentBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/notification/CorrespondenceContent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/notification/CorrespondenceMedia$CorrespondenceMediaBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/notification/CorrespondenceMedia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/notification/CorrespondenceTemplateReference$CorrespondenceTemplateReferenceBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/notification/CorrespondenceTemplateReference.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/notification/EventDetail$EventDetailBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/notification/EventDetail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/notification/ProductAndServiceType$ProductAndServiceTypeBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/notification/ProductAndServiceType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/notification/SmsDTO$SmsDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/notification/SmsDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/notification/SmsNotificationDTO$SmsNotificationDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/playground/notification/SmsNotificationDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground-bootable.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/playground-bootable.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/playground.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/META-INF/microprofile-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/playground/WEB-INF/classes/META-INF/microprofile-config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/blog/GlobalClientHeaders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/blog/GlobalClientHeaders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/blog/JSONPlaceholderClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/blog/JSONPlaceholderClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/blog/PostService$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/blog/PostService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/notification/CorrespondenceAddressee$CorrespondenceAddresseeBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/notification/CorrespondenceAddressee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/notification/CorrespondenceContent$CorrespondenceContentBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/notification/CorrespondenceContent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/notification/CorrespondenceMedia$CorrespondenceMediaBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/notification/CorrespondenceMedia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/notification/CorrespondenceTemplateReference$CorrespondenceTemplateReferenceBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/notification/CorrespondenceTemplateReference.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/notification/EventDetail$EventDetailBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/notification/EventDetail.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/notification/ProductAndServiceType$ProductAndServiceTypeBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/notification/ProductAndServiceType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/notification/SmsDTO$SmsDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/notification/SmsDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/notification/SmsNotificationDTO$SmsNotificationDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/playground/WEB-INF/classes/com/example/playground/notification/SmsNotificationDTO.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,8 +75,10 @@
       <recent name="C:\Users\ABTC240\Desktop\Apps\playground\src\main\java\com\example\playground\notification\sms" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.playground.notification.sms" />
+      <recent name="com.example.playground.blog" />
+      <recent name="com.example.playground.service" />
       <recent name="com.example.playground.utils" />
+      <recent name="com.example.playground.notification.sms" />
     </key>
   </component>
   <component name="RunManager" selected="JAR Application.Run">
@@ -165,8 +115,23 @@
       <option name="presentableId" value="Default" />
       <updated>1662700285117</updated>
       <workItem from="1662700286407" duration="22923000" />
-      <workItem from="1663088544430" duration="73493000" />
+      <workItem from="1663088544430" duration="82036000" />
     </task>
+    <task id="LOCAL-00001" summary="2nd commit">
+      <created>1663326232926</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663326232926</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2nd commit">
+      <created>1663326245930</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663326245930</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,5 +147,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2nd commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="2nd commit" />
   </component>
 </project>

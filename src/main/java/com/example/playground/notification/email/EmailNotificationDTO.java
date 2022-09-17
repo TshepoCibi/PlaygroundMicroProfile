@@ -4,9 +4,7 @@ import lombok.*;
 
 import java.util.Set;
 
-@NoArgsConstructor(access = AccessLevel.PUBLIC)
-@AllArgsConstructor
-@Builder
+
 @Getter
 @Setter
 public class EmailNotificationDTO {

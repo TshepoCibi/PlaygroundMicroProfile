@@ -3,9 +3,6 @@ package com.example.playground.notification.email;
 
 import lombok.*;
 
-@NoArgsConstructor(access = AccessLevel.PUBLIC)
-@AllArgsConstructor
-@Builder
 @Getter
 @Setter
 
