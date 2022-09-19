@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2196cf73-be21-4795-9650-cbf0572702d8" name="Changes" comment="3rd commit" />
+    <list default="true" id="2196cf73-be21-4795-9650-cbf0572702d8" name="Changes" comment="3rd commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/EmailClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/NotificationClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/EmailClientHeaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/GlobalClientHeaders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/PostService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/SmsClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/SmsClientHeaders.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/service/NotificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/service/SmsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/utils/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/utils/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/microprofile-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/microprofile-config.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +56,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/example/playground" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -75,8 +88,8 @@
     </configuration>
     <list>
       <item itemvalue="HTTP Request.generated-requests | #2" />
-      <item itemvalue="JAR Application.Run" />
       <item itemvalue="HTTP Request.generated-requests | #3" />
+      <item itemvalue="JAR Application.Run" />
     </list>
     <recent_temporary>
       <list>
@@ -95,6 +108,8 @@
       <updated>1662700285117</updated>
       <workItem from="1662700286407" duration="22923000" />
       <workItem from="1663088544430" duration="82830000" />
+      <workItem from="1663570533453" duration="6016000" />
+      <workItem from="1663577664777" duration="10916000" />
     </task>
     <task id="LOCAL-00001" summary="2nd commit">
       <created>1663326232926</created>

@@ -3,15 +3,13 @@ package com.example.playground;
 import com.example.playground.notification.email.EmailNotificationDTO;
 import com.example.playground.notification.sms.ResponseDTO;
 import com.example.playground.notification.sms.SmsNotificationDTO;
-import com.example.playground.service.EmailService;
-import com.example.playground.service.SmsService;
+import com.example.playground.service.NotificationService;
 import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import java.net.URISyntaxException;
 
 /**
  *
@@ -20,33 +18,12 @@ import java.net.URISyntaxException;
 @Singleton
 public class HelloController {
 
-//    JSONPlaceholderClient jsonApiClient = RestClientBuilder.newBuilder()
-//            .baseUri(new URI("https://correspondence-domain-cit-ke.amol-api.roanprd-openshift.intra.absa.co.za/v1/correspondence/correspondence-operating-session/outbound/multiplenotification/initiation"))
-//            .register(ResponseLoggingFilter.class)
-//            .sslContext(ssl())
-//            .connectTimeout(2, TimeUnit.SECONDS)
-//            .readTimeout(2, TimeUnit.SECONDS)
-//            .build(JSONPlaceholderClient.class);
-
     @Inject
-    SmsService smsService;
+    NotificationService notificationService;
 
-    @Inject
-    EmailService emailService;
-
-    public HelloController() throws URISyntaxException {
+    public HelloController() {
     }
 
-//    public void restClientBuilder() throws URISyntaxException {
-//        System.out.println("------ Rest Client builder example ------");
-//         jsonApiClient = RestClientBuilder.newBuilder()
-//                .baseUri(new URI("https://correspondence-domain-cit-ke.amol-api.roanprd-openshift.intra.absa.co.za/v1/correspondence/correspondence-operating-session/outbound/multiplenotification/initiation"))
-//                .register(ResponseLoggingFilter.class)
-//                .sslContext(ssl())
-//                .connectTimeout(2, TimeUnit.SECONDS)
-//                .readTimeout(2, TimeUnit.SECONDS)
-//                .build(JSONPlaceholderClient.class);
-//    }
 
     @POST
     @Path("/hi")
@@ -62,7 +39,7 @@ public class HelloController {
     @Consumes(MediaType.APPLICATION_JSON)
     public ResponseDTO sendSMS(@RequestBody SmsNotificationDTO request){
         System.out.println("in Controller =====================");
-        return smsService.sendSMS(request);
+        return notificationService.sendSMS(request);
     }
 
     @POST
@@ -71,32 +48,6 @@ public class HelloController {
     @Consumes(MediaType.APPLICATION_JSON)
     public ResponseDTO sendEmail(@RequestBody EmailNotificationDTO request){
         System.out.println("in Controller =====================");
-        return emailService.sendEmail(request);
+        return notificationService.sendEmail(request);
     }
-
-//    public SSLContext ssl(){
-//        SSLContext sslContext = null;
-//        try {
-//            sslContext = SSLContext.getInstance("SSL");
-//            TrustManager tm = new X509TrustManager() {
-//                @Override
-//                public void checkClientTrusted(java.security.cert.X509Certificate[] chain, String authType) {
-//                }
-//                @Override
-//                public void checkServerTrusted(java.security.cert.X509Certificate[] chain, String authType) {
-//                }
-//                @Override
-//                public java.security.cert.X509Certificate[] getAcceptedIssuers() {
-//                    return new java.security.cert.X509Certificate[]{};
-//                }
-//            };
-//            sslContext.init(null, new TrustManager[] {
-//                    tm
-//            }, null);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//
-//        return sslContext;
-//    }
 }

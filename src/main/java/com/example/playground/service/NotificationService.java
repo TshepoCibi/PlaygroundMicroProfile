@@ -1,27 +1,27 @@
 package com.example.playground.service;
 
-import com.example.playground.blog.EmailClient;
-import com.example.playground.blog.SmsClient;
+import com.example.playground.blog.NotificationClient;
 import com.example.playground.notification.email.EmailNotificationDTO;
 import com.example.playground.notification.sms.ResponseDTO;
 import com.example.playground.notification.sms.SmsNotificationDTO;
 import com.example.playground.utils.Connection;
+import org.eclipse.microprofile.config.Config;
+import org.eclipse.microprofile.config.ConfigProvider;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
+import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import java.net.URISyntaxException;
+@ApplicationScoped
+public class NotificationService {
 
-public class EmailService {
+    private NotificationClient notificationClient;
 
-    @Inject
-    @ConfigProperty(name = "sms.url.value")
-    private String emailURL;
-
-    private EmailClient emailClient;
     Connection connection = new Connection();
         {
             try {
-                emailClient = connection.connectEmail("https://correspondence-domain-cit-ke.amol-api.roanprd-openshift.intra.absa.co.za/v1/correspondence/correspondence-operating-session/outbound/multiplenotification/initiation");
+                notificationClient = connection.globalConnetion();
             } catch (URISyntaxException e) {
                 e.printStackTrace();
             }
@@ -29,7 +29,15 @@ public class EmailService {
 
     public ResponseDTO sendEmail(EmailNotificationDTO request){
         System.out.println("in Service =====================");
-        ResponseDTO responseDTO = emailClient.email(request);
+        ResponseDTO responseDTO = notificationClient.email(request);
+        responseDTO.setMessage(responseDTO.getMessage() + " Approved by business service");
+        System.out.println(responseDTO.getStatus());
+        return responseDTO;
+    }
+
+    public ResponseDTO sendSMS(SmsNotificationDTO request){
+        System.out.println("in Service =====================");
+        ResponseDTO responseDTO = notificationClient.sms(request);
         responseDTO.setMessage(responseDTO.getMessage() + " Approved by business service");
         System.out.println(responseDTO.getStatus());
         return responseDTO;
