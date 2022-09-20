@@ -8,8 +8,10 @@ import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
+import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 /**
  *
@@ -37,17 +39,25 @@ public class HelloController {
     @Path("/sms")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public ResponseDTO sendSMS(@RequestBody SmsNotificationDTO request){
+    public Response sendSMS(@RequestBody @Valid SmsNotificationDTO request){
+    if(request.equals(null)){
+        return Response.serverError().status(Response.Status.BAD_REQUEST).build();
+    }
         System.out.println("in Controller =====================");
-        return notificationService.sendSMS(request);
+    ResponseDTO res =notificationService.sendSMS(request);
+        System.out.println("Res ===========> ");
+        System.out.println(Response.ok().entity(res).build());
+        System.out.println(Response.ok(res).build().getMetadata());
+        System.out.println(Response.ok(res).build().getEntity());
+        return Response.ok(res).build();
     }
 
     @POST
     @Path("/email")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public ResponseDTO sendEmail(@RequestBody EmailNotificationDTO request){
+    public Response sendEmail(@RequestBody EmailNotificationDTO request){
         System.out.println("in Controller =====================");
-        return notificationService.sendEmail(request);
+        return Response.ok(notificationService.sendEmail(request)).build();
     }
 }

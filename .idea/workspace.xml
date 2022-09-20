@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2196cf73-be21-4795-9650-cbf0572702d8" name="Changes" comment="3rd commit">
+    <list default="true" id="2196cf73-be21-4795-9650-cbf0572702d8" name="Changes" comment="4th commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/EmailClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/NotificationClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/EmailClientHeaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/GlobalClientHeaders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/PostService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/SmsClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/blog/SmsClientHeaders.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/service/NotificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/service/SmsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/sms/SmsNotificationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/notification/sms/SmsNotificationDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/playground/utils/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/playground/utils/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/microprofile-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/microprofile-config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +54,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/example/playground" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -73,7 +68,7 @@
       <recent name="com.example.playground.notification.sms" />
     </key>
   </component>
-  <component name="RunManager" selected="JAR Application.Run">
+  <component name="RunManager" selected="Shell Script.BuildAndRun.sh">
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -86,13 +81,30 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2" />
     </configuration>
+    <configuration name="BuildAndRun.sh" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="mvn clean package java -jar target/playground-bootable.jar" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="BuildAndRun.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="HTTP Request.generated-requests | #2" />
       <item itemvalue="HTTP Request.generated-requests | #3" />
       <item itemvalue="JAR Application.Run" />
+      <item itemvalue="Shell Script.BuildAndRun.sh" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Shell Script.BuildAndRun.sh" />
         <item itemvalue="HTTP Request.generated-requests | #2" />
         <item itemvalue="HTTP Request.generated-requests | #3" />
       </list>
@@ -109,7 +121,7 @@
       <workItem from="1662700286407" duration="22923000" />
       <workItem from="1663088544430" duration="82830000" />
       <workItem from="1663570533453" duration="6016000" />
-      <workItem from="1663577664777" duration="10916000" />
+      <workItem from="1663577664777" duration="23736000" />
     </task>
     <task id="LOCAL-00001" summary="2nd commit">
       <created>1663326232926</created>
@@ -132,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663390576903</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="4th commit">
+      <created>1663592965821</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663592965821</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +171,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2nd commit" />
     <MESSAGE value="3rd commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="3rd commit" />
+    <MESSAGE value="4th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th commit" />
   </component>
 </project>
